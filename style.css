@@ -1,0 +1,85 @@
+body {
+    font-family: Roboto;
+    flex-direction: column;
+    padding: 15px;
+}
+
+hr {
+    position: absolute;
+    width: 40%;
+    border-top: 0.3rem solid blue;
+    left: -250px;
+}
+
+.presentacion {
+    display: inline-block;
+    align-content: center;
+}
+
+img {
+   float: left;
+   margin: 20px;
+   width: 250px;
+}
+
+/* Fist div FULL STACK */
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li {
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+
+.ul_firstli::before {
+    content: '▶';
+    margin-right: 0.2rem;
+}
+.ul_secondli::before {
+    content: '▶';
+    margin-right: 0.2rem;
+}
+
+  progress {
+    height: 2rem;
+    position: absolute;
+    left: 0rem;
+    bottom: -0.5rem;
+}
+
+progress:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: attr(value)'%';
+}
+
+.full-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Second div SKILLS*/
+
+.skills {
+    background-color: whitesmoke;
+    padding: 1rem;
+    margin: 0rem -2rem;
+}
+
+.facts__li {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.facts__li__container {
+    display: block;
+}
+
+.facts__li__simbol {
+    content: "";
+}
