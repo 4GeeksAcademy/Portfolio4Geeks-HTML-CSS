@@ -1,7 +1,7 @@
 body {
     font-family: Roboto;
     flex-direction: column;
-    padding: 15px;
+    padding: 50px;
 }
 
 hr {
@@ -11,18 +11,12 @@ hr {
     left: -250px;
 }
 
-.presentacion {
-    display: inline-block;
-    align-content: center;
-}
-
 img {
    float: left;
    margin: 20px;
    width: 250px;
 }
 
-/* Fist div FULL STACK */
 ul {
     display: flex;
     justify-content: space-around;
@@ -33,15 +27,6 @@ li {
     position:relative;
     display: flex;
     align-items: center;
-}
-
-.ul_firstli::before {
-    content: '▶';
-    margin-right: 0.2rem;
-}
-.ul_secondli::before {
-    content: '▶';
-    margin-right: 0.2rem;
 }
 
   progress {
@@ -58,9 +43,26 @@ progress:after {
     content: attr(value)'%';
 }
 
+/* Fist div FULL STACK */
+
+.presentacion {
+    display: inline-block;
+    align-content: center;
+}
+
 .full-stack {
     display: flex;
     flex-direction: column;
+}
+
+.ul_firstli::before {
+    content: '▶';
+    margin-right: 0.2rem;
+}
+
+.ul_secondli::before {
+    content: '▶';
+    margin-right: 0.2rem;
 }
 
 /* Second div SKILLS*/
@@ -71,15 +73,21 @@ progress:after {
     margin: 0rem -2rem;
 }
 
+/* Third div FACTS*/
+.facts {
+    color: blue;
+}
 .facts__li {
     display: inline-flex;
     flex-direction: row;
-}
-
-.facts__li__container {
-    display: block;
+    justify-content: space-evenly;
 }
 
 .facts__li__simbol {
     content: "";
+}
+
+.icons {
+    margin-bottom: 4rem;
+    width: 2rem;
 }
